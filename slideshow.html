@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>My Website</title>
+
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="css/splide.min.css" />
+
+    <!-- Custom CSS styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Slideshow using Splide.js</h1>
+
+      <!-- slideshow -->
+      <section class="splide" aria-label="Slide Container Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img
+                  src="slideImg/marigold.jpg"
+                  height="400"
+                  alt="it is a flower"
+                />
+              </div>
+              Lorem Ipsum Dolor Sit Amet
+            </li>
+
+            <!-- FIRST SLIDE end -->
+
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img
+                  src="slideImg/moon.jpg"
+                  height="400"
+                  alt="it is the moon"
+                />
+              </div>
+            </li>
+
+            <!-- SECOND SLIDE end -->
+
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img
+                  src="slideImg/cave.jpg"
+                  height="400"
+                  alt="it is the moon"
+                />
+              </div>
+            </li>
+
+            <!-- THIRD SLIDE end -->
+          </ul>
+        </div>
+      </section>
+      <!-- End slideshow -->
+    </main>
+
+    <!-- Splide JS -->
+    <script src="js/splide.min.js"></script>
+
+    <!-- initialize Splide -->
+    <script>
+      new Splide(".splide").mount();
+    </script>
+  </body>
+</html>
