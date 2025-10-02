@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Roman New Times";
     src: local("Roman New Times"),
-    url("fonts/Roman_New_Times.otf") format(".otf");
+    url("fonts/Roman_New_Times.otf") format("otf");
 }
 
 h1 {
