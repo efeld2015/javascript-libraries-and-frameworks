@@ -31,7 +31,7 @@
       <div class="container-fluid">
         <h3 class="text-primary text-center">jQuery Playground</h3>
 
-        <button class="btn" id="rerun">rerun!</button>
+        <button class="btn" id="allTheThings">All the things!</button>
         <button class="btn" id="trash">trash!</button>
 
         <div class="row">
@@ -73,13 +73,14 @@
     ></script>
 
     <script>
-      $(document).ready(function () {
+      $(document).ready(function () {});
+
+      $("#allTheThings").on("click", function () {
         allTheThings();
-       
       });
 
-      $("#rerun").on( "click", function () {
-        allTheThings();
+      $("#trash").on("click", function () {
+        $("body").addClass("animated hinge");
       });
 
       function allTheThings() {
